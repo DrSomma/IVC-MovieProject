@@ -16,7 +16,7 @@
     #if (initial_camera_pos = 0)
     	look_at initial_camera_pos
     #else
-    	look_at initial_camera_pos - clock
+    	look_at initial_camera_pos - (clock * 2)
     #end
     
     //#if (initial_camera_angle = 0)
