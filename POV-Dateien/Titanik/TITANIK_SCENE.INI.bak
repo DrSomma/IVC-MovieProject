@@ -1,0 +1,27 @@
+; Persistence Of Vision raytracer version 3.5 example file.
+
+Antialias=On
+Antialias_Threshold=0.5
+Antialias_Depth=5
+
+Input_File_Name=titanik_scene.pov
+
+Initial_Frame=1
+Final_Frame=120
+Initial_Clock=0
+Final_Clock=1 
+
+Cyclic_Animation=off
+Pause_when_Done=off   
+
+
+[1920x1080 16:9 AA 0.3]
+Width=1920
+Height=1080
+Antialias=On
+Antialias_Threshold=0.3
+
+[320x240, No AA]
+Width=320
+Height=240
+Antialias=Off
