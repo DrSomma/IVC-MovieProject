@@ -60,7 +60,7 @@ global_settings{ assumed_gamma 1.0 }
                             location  <4.0 , 40, -3.0>
                             right     x*image_width/image_height
                             look_at   <0.0 , 1.0 , 0.0>} 
-camera{Camera_5}                           
+camera{Camera_2}                           
 // Camera 2
 // Camera 3
 // sun ---------------------------------------------------------------------
@@ -252,7 +252,7 @@ height_field{
     scale <100,100,100> 
     rotate <0,45,0>
     translate<0,0,10>
-    translate <0, 0, -20-Schiff_Geschwindigkeit*clock>
+    translate <0, 0, -23-Schiff_Geschwindigkeit*clock>
     texture { pigment { color White } }
    } // end HF
   
