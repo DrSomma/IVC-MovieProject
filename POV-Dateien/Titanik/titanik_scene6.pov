@@ -285,8 +285,13 @@ height_field{
 #ifndef (Man_Scale)                     #declare Man_Scale = <1,1,1>;                                            #end
 #ifndef (Man_Translate)                 #declare Man_Translate = <0,0,-5>;              		             #end			       
 
-
-          
+#if (clock > 0.1 & clock < 0.2)
+#declare Upper_Body_Rotate = <-45*sin(clock-0.1)*5,-5,0>;
+#else
+#declare Upper_Body_Rotate = <0,-5,0> ; 
+#end
+      
+      
 // Neo
 
 union { 
@@ -348,6 +353,8 @@ union {
       rotate Man_Rotate // Mensch drehen
       scale Man_Scale // Mensch skallieren
       translate Man_Translate // Mensch bewegen
-      rotate <0,270,0> scale <0.9,0.9,0.9> rotate <0, -90, 0> translate <0, 40, 145> scale <0.06,0.06,0.06>// Startposition für Tests
+      rotate <0,270,0> scale <0.9,0.9,0.9> 
+      rotate <0, -90, 0> 
+      translate <0, 40, 145> scale <0.06,0.06,0.06>// Startposition für Tests
       finish {ambient .0 diffuse .0} 
 }
